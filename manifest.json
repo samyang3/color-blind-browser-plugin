@@ -1,0 +1,41 @@
+  {
+    "manifest_version":3,
+    "version":"1.1",
+    "name":"Color Blind Helper",
+    "description": "Changes the colors of the webpage to be more color-blind friendly",
+
+    "icons": {
+      "16": "images/icon.png",   
+      "48": "images/icon.png",  
+      "128": "images/icon.png" 
+    },
+
+
+    "content_scripts":[
+      {
+       "matches":["<all_urls>"],
+       "js":["scripts/main.js"]
+      }
+    ],
+
+    "permissions": [
+      "storage"
+    ],
+
+    "action": {
+      "default_popup": "popup/popup.html"
+    },
+
+    "commands": {
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Ctrl+B",
+          "mac": "Command+B"
+        }
+      }
+    }
+
+   
+
+
+  }

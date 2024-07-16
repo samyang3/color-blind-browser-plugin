@@ -1,1 +1,1 @@
-# color-blind-browser-plugin
+# color-blind-helper

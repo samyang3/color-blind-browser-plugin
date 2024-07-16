@@ -1,0 +1,35 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Atkinson Hyperlegible' rel='stylesheet'>
+    <script defer src="popup.js" type="module"></script>
+ 
+
+  <body>
+    <h1>Color blind helper</h1>
+    <form id="optionsForm">
+      <label for="enable">
+        <input type="checkbox" name="enable" id="enable">
+        Enable color correction
+      </label>
+    </form>
+    <form id="removeImagesForm">
+      <label for="removeImages">
+        <input type="checkbox" name="removeImages" id="removeImages">
+        Remove images
+      </label>
+    </form>
+    <form id="colorsDropdown">
+      <label for="colors">Choose a color option:</label>
+      <select name="colors" id="colors">
+        <option value="BW-Light">Black & White Light</option>
+        <option value="BW-Dark">Black & White Dark</option>
+        <option value="Increase-Contrast">Increase Contrast</option>
+      </select>
+    </form>
+    
+  </body>
+</html>
